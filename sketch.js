@@ -141,9 +141,10 @@ function keyPressed() {
 }
 
 function showCannonBalls(ball, index) {
-  ball.display();
-  ball.animate();
+ 
   if (ball) {
+     ball.display();
+     ball.animate();
     
     if (ball.body.position.x >= width || ball.body.position.y >= height - 50) {
 
